@@ -15,7 +15,12 @@
 
         <div class="col-sm-4">
             <input class="form-control" type="text" name="animal" id="animal">
-            <input class="form-control" type="text" name="color" id="color">
+            <select class="form-control" name="color" id="color">
+                <option>--Select a color--</option>
+                <repeat group="{{ @colors }}" value="{{ @colorOption }}">
+                    <option>{{ @colorOption }}</option>
+                </repeat>
+            </select>
         </div>
     </div>
 

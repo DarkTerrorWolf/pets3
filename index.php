@@ -24,4 +24,11 @@ $f3->route('GET|POST /order', function () {
 }
 );
 
+$f3->route('GET|POST /form2', function () {
+    //echo "<h1>Hello World!</h1>";
+    $view = new Template();
+    echo $view->render("views/form2.html");
+}
+);
+
 $f3->run();

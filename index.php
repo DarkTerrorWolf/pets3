@@ -9,7 +9,7 @@ require_once('model/validation-functions.php');
 //F3 class
 $f3 = Base::instance();
 
-$f3->set('colors', array('pink', 'green', 'blue'));
+//$f3->set('colors', array('pink', 'green', 'blue'));
 
 //Route
 $f3->route('GET /', function () {
@@ -18,6 +18,7 @@ $f3->route('GET /', function () {
     echo $view->render("views/home.html");
 }
 );
+
 $f3->route('GET|POST /order', function ($f3) {
     $colors = array('Red','Blue','Brown','Pink','Black');
     $f3 ->set('colors',$colors);
@@ -39,6 +40,16 @@ $f3->route('GET|POST /order', function ($f3) {
 }
 );
 $f3->route('GET /results', function () {
+    $template = new Template();
+    echo $template->render('views/results.html');
+});
+$f3->route('GET /order', function()
+{
+    $view = new Template();
+    echo $view->render('views/orderform.html');
+});
+
+$f3->route('GET|POST /form2', function () {
     //echo "<h1>Hello World!</h1>";
     $view = new Template();
     echo $view->render("views/results.html");

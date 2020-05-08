@@ -8,7 +8,7 @@ require_once('vendor/autoload.php');
 //F3 class
 $f3 = Base::instance();
 
-$f3->set('colors', array('pink', 'green', 'blue'));
+//$f3->set('colors', array('pink', 'green', 'blue'));
 
 //Route
 $f3->route('GET /', function () {
@@ -17,12 +17,12 @@ $f3->route('GET /', function () {
     echo $view->render("views/home.html");
 }
 );
-$f3->route('GET|POST /order', function () {
-    //echo "<h1>Hello World!</h1>";
+
+$f3->route('GET /order', function()
+{
     $view = new Template();
-    echo $view->render("views/orderform.html");
-}
-);
+    echo $view->render('views/orderform.html');
+});
 
 $f3->route('GET|POST /form2', function () {
     //echo "<h1>Hello World!</h1>";

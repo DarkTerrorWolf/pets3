@@ -3,12 +3,11 @@
   "authors": [
     {
       "name": "Michael Gulchuk",
-      "email": "mgulchuk@mail.greenrvier.edu"
+      "email": "mgulchuk@mail.greenriver.edu"
     },
     {
       "name": "Tylor Schlosser",
       "email": "tschlosser@mail.greenriver.edu"
-
     }
   ],
   "require": {

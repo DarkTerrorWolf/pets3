@@ -31,8 +31,10 @@ $f3->route('GET|POST /order', function ($f3) {
             $_SESSION['animal'] = $animal;
             $_SESSION['color'] = $color;
             $f3->reroute('results');
-        } else {
-            $f3->set("errors['animal']", "Please enter an animal.");
+        } else if((validString($animal))) {
+            $f3->set("errors['animal']", "Please enter an animal.");}
+     else{
+            $f3->set("errors['color']", "Please enter a color.");
         }
     }
     $template = new Template();

@@ -12,7 +12,6 @@
     <div class="form-group">
         <label for="animal" class="col-sm-2 control-label">Animal would you like? </label>
         <label for="color" class="col-sm-2 control-label">What color would you like it? </label>
-
         <div class="col-sm-4">
             <input class="form-control" type="text" name="animal" id="animal">
             <select class="form-control" name="color" id="color">
@@ -29,5 +28,6 @@
                type="submit" value="Place Order">
     </div>
 </form>
+<p>{{@errors['animal']}}    {{@errors['color']}}</p>
 </body>
 </html>

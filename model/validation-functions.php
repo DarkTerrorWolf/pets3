@@ -14,7 +14,10 @@ function validColor($color)
 function validString($string){
     if(is_string($string)){
         return true;
-    }else{
+    }elseif($string = ""){
+        return false;
+    }
+    else{
         return false;
     }
 }

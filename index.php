@@ -8,6 +8,8 @@ require_once('vendor/autoload.php');
 //F3 class
 $f3 = Base::instance();
 
+$f3->set('colors', array('pink', 'green', 'blue'));
+
 //Route
 $f3->route('GET /', function () {
     //echo "<h1>Hello World!</h1>";

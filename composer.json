@@ -1,0 +1,17 @@
+{
+  "name": "dboichuk/328/pets",
+  "authors": [
+    {
+      "name": "Shah Emran",
+      "email": "semran@mail.greenriver.edu"
+    },
+    {
+      "name": "Tylor Schlosser",
+      "email": "tschlosser@mail.greenriver.edu"
+
+    }
+  ],
+  "require": {
+    "bcosca/fatfree-core": "dev-master"
+  }
+}
